@@ -17,14 +17,26 @@
         .livro {
             border-radius: 15px;
             align-items: center;
-            margin: 15px;
             display: flex;
             justify-content: center;
             border: 2px solid black;
             flex-direction: column;
+            margin: 10px;
+            width: 200px;
+            height: auto;
         }
         .texto {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .livro img {
+            width: 150px;
+            height: auto;
+        }
+        .livros-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -38,14 +50,14 @@
             </div>
         </div>
         <div class="container p-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-5 livro p-4">
-                    <img src="images/1984.jpg" alt="1984" style="width: 250px"/>
+            <div class="livros-container">
+                <div class="col-md-6 livro p-4">
+                    <img src="images/1984.jpg" alt="1984"/>
                     <p class="texto"><strong>George Orwell</strong></p>
                     <p class="texto"><strong>1984</strong></p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 livro p-4">
-                    <img src="images/os_miseraveis.jpg" alt="Os Miseráveis" style="width: 270px"/>
+                <div class="col-md-6 livro p-4">
+                    <img src="images/os_miseraveis.jpg" alt="Os Miseráveis"/>
                     <p class="texto"><strong>Victor Hugo</strong></p>
                     <p class="texto"><strong>Os Miseráveis</strong></p>
                 </div>
